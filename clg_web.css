@@ -1,0 +1,29 @@
+body{
+      color: #325050;
+      background:#f6d7e6;
+      background-image: url();
+      font-family: 'Libre Baskerville', sans-serif;
+      font-size: 70%;
+     }
+.main_heading{
+      font-family: Verdana,sans-serif;
+      font-size: 55px;
+      }
+.main_heading2{
+      font-family: Verdana,sans-serif;
+      font-size: 55px;
+       }
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    }
+   .navbar{
+    margin-bottom: 0px;
+    }
+.body{}
+.banner{}
+.nav_bar{}
+.left_bar{}
+.container{}
+.footer{}
