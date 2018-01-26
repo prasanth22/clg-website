@@ -27,3 +27,41 @@ body{
 .left_bar{}
 .container{}
 .footer{}
+.header-img, .main-img, .footer-img {
+    height: 44rem;
+}
+.main-img {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)) ), url("http://i66.tinypic.com/2qvgl7m.jpg") no-repeat;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1) ), url("http://i66.tinypic.com/2qvgl7m.jpg") no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1) ), url("http://i66.tinypic.com/2qvgl7m.jpg") no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1) ), url("http://i66.tinypic.com/2qvgl7m.jpg") no-repeat;
+        background-attachment: scroll, scroll;
+        background-size: auto auto, auto auto;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-transform: skewY(5.1deg);
+    -ms-transform: skewY(5.1deg);
+    transform: skewY(5.1deg);
+    margin: 7rem 0;
+}
+.header-img, .main-img, .footer-img {
+    height: 22rem;
+    -webkit-transition: -webkit-filter 400ms;
+    transition: -webkit-filter 400ms;
+    -o-transition: filter 400ms;
+    transition: filter 400ms;
+    transition: filter 400ms, -webkit-filter 400ms;
+}
+.centered {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.make-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

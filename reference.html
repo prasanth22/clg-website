@@ -10,14 +10,55 @@
   <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+   <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ /* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 1px 1px 6px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav i{padding: 10px;}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 10px;}
+} 
   h2 {
   font: 400 80px/1.0 'Just Another Hand', Helvetica, sans-serif;
   color: #a8aff9;
   text-shadow: 0px 3px 0px #5e5e5e, 0px 5px 0px #4d4d4d, 0px 7px 0px #3c3c3c, 0px 9px 0px #2b2b2b, 3px 8px 15px rgba(0,0,0,0.1), 3px 8px 5px rgba(0,0,0,0.3);
      }
   .img-thumbnail{
-    height: 350;
+    height: 380;
    }
    .jumbotron {
     padding-top: 10px;
@@ -36,55 +77,26 @@
 </head>
 <body>
 <div class="row jumbotron">
+ <div class="col-sm-2"></div>
  <div class="col-sm-1">           
   <img src="clglogo.jpg" class="img-circle" alt="clg logo" width="100" height="100"> 
  </div>
- <div class="col-sm-11">
+ <div class="col-sm-9">
   <h2>GIST edu</h2>  
   <p></p>
  </div>
 </div>
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="file:///C:/Users/Personal/Desktop/project/clg_web/reference.html">HOME</a>
-      
-      <ul class="nav navbar-nav navbar-right">
-         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">branches
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-           <li><a href="#">CSE</a></li>
-           <li><a href="#">CIVIL</a></li>
-           <li><a href="#">MECH</a></li>
-          </ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-         
-      </ul>
-       
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
-    </div>
-  </div>
-</nav>
 <div class="container-fluid">
-  <h2></h2>
-  <p></p>
-  <img class="img-thumbnail img-responsive" src="clg2.jpg" alt="image" width="100%" height="150"/>            
+  <div class="sidenav icon-bar">
+    <a href="javascript:void(0)" class="closebtn" onmouseover="closeNav()">&times;</a>
+    <a href="#"><i class="fa fa-home"></i>Home</a>
+    <a href="#"><i class="fa fa-search"></i>About </a>
+    <a href="#"><i class="fa fa-envelope"></i>Contact </a>
+    <a href="#"><i class="fa fa-globe"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a>
+  </div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-10" style="padding-top: 10px;"><img class="img-thumbnail img-responsive" src="clg2.jpg" alt="image" width="100%" height="200"/></div>
 </div>
 <div class="container">
   <div class="row">
@@ -117,11 +129,16 @@
         </div>
       </a>
     </div>
-  </div>
+   </div>
 <div class="embed-responsive embed-responsive-16by9">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3CLDODvcYw0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
-</div>
+</div><div class="make-flex main-img centered">
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, accusamus</p>
+					<cite>- Lorem</cite>
+				</blockquote>
+			</div>
 </div>
 
 </body>

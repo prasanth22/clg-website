@@ -46,6 +46,19 @@
     margin-bottom: 0px;
     }
     @import 'https://fonts.googleapis.com/css?family=Fira+Mono';
+   .content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 
 
 
@@ -66,7 +79,7 @@
 <!-- See the JavaScript box for an explanation and how to customize -->
  </div>
 </div>
- <nav class="navbar navbar-default">
+ <nav id="navbar" class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">home
@@ -90,7 +103,7 @@
               </ul>
       </ul>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="content collapse navbar-collapse" id="myNavbar">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search Blog..">
         <span class="input-group-btn">
@@ -103,7 +116,7 @@
   </div>
 </nav> 
 
-<div class="container-fluid">
+<div class="container-fluid content">
   <div class="row content">
     <div class="col-sm-3 sidenav">
       
@@ -160,6 +173,20 @@
    <strong>Request:</strong> help us in helping you
   </div>
 </footer>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
